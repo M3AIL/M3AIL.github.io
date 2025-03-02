@@ -30,7 +30,7 @@
 ### 第一次上传（初始化并推送）
 - git init  
 - git add .  
-- git commit -m "initial commit"  
+- git commit -m "初始化网站"  
 - git branch -M main  
 - git remote add origin https://github.com/M3AIL/M3AIL.github.io.git  
 - git push -u origin main  
@@ -46,7 +46,7 @@
 
 ### 本地文件全部上传到远程仓库
 - git add .  
-- git commit -m "初始化网站"  
+- git commit -m "更新内容"  
 - git push  
 
 ---
