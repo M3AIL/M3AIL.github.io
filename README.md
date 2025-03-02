@@ -28,32 +28,26 @@
 ## Git操作手册
 
 ### 第一次上传（初始化并推送）
-\`\`\`bash
 git init  
 git add .  
 git commit -m "initial commit"  
 git branch -M main  
 git remote add origin https://github.com/M3AIL/M3AIL.github.io.git  
 git push -u origin main  
-\`\`\`
 
 ---
 
 ### 清空本地和远程仓库
-\`\`\`bash  
 git rm -r .  
 git commit -m "删除所有文件"  
 git push  
-\`\`\`
 
 ---
 
 ### 本地文件全部上传到远程仓库
-\`\`\`bash
 git add .
 git commit -m "初始化网站"
 git push
-\`\`\`
 
 ---
 
