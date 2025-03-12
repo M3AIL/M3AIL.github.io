@@ -1,0 +1,73 @@
+.modal-body {
+  text-align: center;
+  width: 300px;
+  height: 450px;
+  overflow-y: scroll; /*固定高度并添加滚动条*/
+
+  /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
+  -ms-overflow-style: none;
+  /*火狐下隐藏滚动条*/
+  overflow: -moz-scrollbars-none;
+}
+
+.modal-body::-webkit-scrollbar {
+  display: none; /*隐藏滚动条*/
+}
+
+.modal-header {
+  border: none;
+}
+
+.student-avatar {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.student-title {
+  margin-top: 15px;
+}
+
+.student-description {
+  text-align: left;
+  margin: 20px 25px;
+}
+
+.student-description div {
+  margin: 15px 0px;
+  color: #444444;
+}
+
+.student-description-icon {
+  height: 15px;
+  width: 15px;
+  fill: rgba(0, 0, 0, 0.65);
+  display: none;
+}
+
+.student-description div span {
+  word-wrap: break-word;
+}
+
+.student-description-title {
+  font-size: 13px;
+  color: #888888;
+}
+
+#student-description-research-list {
+  /* list-style-type: disc; */
+  list-style: disc;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#student-description-research-list li {
+  color: #444444;
+  font-size: 15px;
+  margin-right: 0px;
+  text-align: left;
+}
