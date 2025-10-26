@@ -35,6 +35,15 @@
     font-weight: bold;
 }
 
+
+.paper-title,
+.author,
+.journal {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+
 .paper-header {
     font-size: 1.4rem;
     font-weight: 600;
