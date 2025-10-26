@@ -36,24 +36,31 @@
 }
 
 
-.paper-title,
-.author,
-.journal {
-    margin-bottom: 0.5rem;
-    display: block;
-}
-
-
 .paper-header {
     font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0rem; /* 添加较小的间距*/
 }
 
 .paper-title {
     color: #2c3e50;
     margin-right: 1rem;
 }
+
+.paper-meta {
+    margin-top: 0; /* Reset any default margin */
+}
+
+.author {
+    display: block;
+    margin-top: 0; /* Reset any default margin */
+    margin-bottom: 1rem; /* Same spacing as paper-header margin-bottom */
+}
+
+.journal {
+    display: block;
+}
+
 
 /* 可访问性增强 */
 [role="heading"] {
@@ -68,7 +75,7 @@
 
 [aria-level="2"] {
     font-size: 1.6rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 
