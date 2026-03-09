@@ -51,110 +51,100 @@
 <!-- Page Content -->
     <section id="bloghome">
         <div class="container blog">
-            <!-- 居中布局：去掉左侧偏移，改用 col-md-offset-2 或让容器自然居中 -->
-            <div class="row">
-                <div class="col-sm-12 col-md-8 col-md-offset-2">
-                    <h2 class="news-detail-title">实验室博士生尤晓兴、硕士生赵德龙成果获 AAAI 2026 录用</h2>
-                    <hr>
-                    
-                    <div class="news-detail-content">
-                        <!-- 顶层预览图：双论文首页拼接或封面 -->
-                        <div class="text-center" style="margin-bottom: 20px;">
-                            <img src="images/aaai26-youxiaoxing-MERGE-firstpage.png" style="width:48%; display:inline-block;" alt="MERGE" />
-                            <img src="images/aaai26-zhaodelong-PSCBM-firstpage.png" style="width:48%; display:inline-block;" alt="PS-CBM" />
-                        </div>
+            <!-- 左侧留白，维持您喜欢的结构 -->
+            <div class="col-sm-2 text-left">
+                <p></p>
+            </div>
 
-                        <p>
-                            <b>📢 TL;DR：</b> 
-                            <b>M<sup>3</sup>AIL实验室</b>在多模态理解与可解释AI领域取得双重突破！
-                            <b>MERGE框架（Oral）</b>通过构建实体中心多模态知识库，解决了新闻图说中“信息缺失”与“跨模态对齐”难题；
-                            <b>PS-CBM模型（Poster）</b>通过创新的“部分共享”策略，在显著提升模型可解释性的同时，保持了卓越的分类精度。
-                        </p>
+            <!-- 主内容区 -->
+            <div class="col-sm-12 col-md-8">
+                <h2 class="news-detail-title">实验室博士生尤晓兴、硕士生赵德龙成果获 AAAI 2026 录用 (含一项 Oral)</h2>
+                <hr>
+                <div class="news-detail-content">
+                    <!-- 置顶大图：建议放 MERGE 的首页或两篇论文的合影/拼接图 -->
+                    <img src="images/aaai26-youxiaoxing-MERGE-firstpage.png" alt="MERGE" />
+                    <img src="images/aaai26-zhaodelong-PSCBM-firstpage.png" alt="MERGE" />
 
-                        <hr />
+                    <p>
+                        <b>📢 TL;DR：</b> 
+                        <b>M<sup>3</sup>AIL实验室</b>在多模态理解与可解释AI领域取得双重突破！
+                        <b>MERGE框架（Oral）</b>通过构建实体中心知识库，使机器能利用外部背景知识精准生成新闻图说，实现了 caption 质量与实体识别性能的双重提升；
+                        <b>PS-CBM模型（Poster）</b>创新性地提出“部分共享”概念策略，解决了传统模型概念冗余的难题，在保持极高预测精度的同时，显著增强了黑盒模型的可解释性。
+                    </p>
 
-                        <p>
-                            2025年10月，人工智能领域顶级国际会议<b>第40届AAAI（AAAI Conference on Artificial Intelligence, 2026）</b>录用结果正式揭晓。由<b>哈尔滨工业大学（深圳）多媒体智能前沿实验室（M<sup>3</sup>AIL Research Group）</b>完成的两篇论文脱颖而出。
-                        </p>
-                        <p>
-                            其中，博士生<b>尤晓兴</b>的论文被录用为 <b>Oral</b>；硕士生<b>赵德龙</b>的论文被录用为 <b>Poster</b>。两项成果均由<b>俞俊教授</b>、<b>黄强教授</b>指导完成。
-                        </p>
+                    <hr />
 
-                        <hr />
+                    <p>
+                        2025年10月，人工智能顶级会议 <b>AAAI 2026 (The 40th AAAI Conference on Artificial Intelligence)</b> 录用结果公布。
+                        由<b>哈尔滨工业大学（深圳）多媒体智能前沿实验室（M<sup>3</sup>AIL Research Group）</b>完成的两篇高质量论文成功入选。
+                        其中，博士生<b>尤晓兴</b>（第一作者）的论文被录用为 <b>Oral（口头报告）</b>；硕士生<b>赵德龙</b>（第一作者）的论文被录用为 <b>Poster（海报展示）</b>。
+                        两项研究均在<b>俞俊教授</b>、<b>黄强教授</b>指导下完成，展示了实验室在多模态学习与可解释深度学习方向的领先探索。
+                    </p>
 
-                        <!-- 成果一 -->
-                        <div class="research-section">
-                            <h4><b>【成果一：Oral】MERGE——知识补全视觉，助力精准新闻图说</b></h4>
-                            
-                            <!-- 先图 -->
-                            <div class="text-center" style="margin: 20px 0;">
-                                <img src="images/aaai26-youxiaoxing-MERGE-framework.png" alt="MERGE 框架图" />
-                                <p class="image-caption">图1：MERGE 框架流程图，包含 EMKB 知识库构建与 HCMA 三阶段对齐策略</p>
-                            </div>
+                    <hr />
 
-                            <!-- 后文 -->
-                            <p><b>研究背景：</b>新闻图说（News Image Captioning）不仅需要描述视觉内容，更需结合文章背景精准识别人物与事件。现有方法常面临关键实体缺失、跨模态对齐弱等问题。</p>
-                            <p><b>核心创新：</b>
-                                <ul>
-                                    <li><b>EMKB 知识库：</b>构建了实体感知的多模态知识库，通过外部检索补全文章未提及的深层背景信息。</li>
-                                    <li><b>HCMA 对齐策略：</b>采用“假设生成-句子选择-全局总结”的三阶段链式思考（CoT）机制，实现细粒度的图文对齐。</li>
-                                </ul>
-                            </p>
+                    <!-- 成果一：MERGE (Oral) -->
+                    <img src="images/aaai26-youxiaoxing-MERGE-framework.png" alt="MERGE 框架图" />
 
-                            <!-- 实验结果 -->
-                            <p><b>实验结果：</b></p>
-                            <div class="text-center" style="margin: 15px 0;">
-                                <img src="images/aaai26-youxiaoxing-MERGE-results.png" style="max-width:90%" alt="MERGE 实验结果" />
-                            </div>
-                            <p>在 <b>GoodNews</b> 和 <b>NYTimes800k</b> 等权威数据集上，MERGE 在 caption 质量（CIDEr）上相比 SOTA 基线分别提升了 <b>+6.84</b> 和 <b>+1.16</b>，同时在命名实体识别（NER）准确度上取得了 <b>+4.14 F1</b> 的显著提升，证明了外部知识辅助生成的有效性。</p>
-                        </div>
+                    <h4><b>研究亮点：MERGE——知识补全视觉，助力精准新闻图说</b></h4>
+                    <p>
+                        针对新闻图说（News Image Captioning）中关键实体信息缺失、视觉地面化（Grounding）不精准的挑战，本文提出了首个<b>实体感知检索增强生成框架 MERGE</b>。
+                        该框架通过构建一个集成了文本、视觉和结构化知识的实体中心多模态知识库（EMKB），能够动态检索图像中实体的背景背景，并采用三阶段链式思考（CoT）策略实现精细的图文语义对齐。
+                    </p>
 
-                        <hr />
+                    <img src="images/aaai26-youxiaoxing-MERGE-results.png" alt="MERGE 实验结果" />
 
-                        <!-- 成果二 -->
-                        <div class="research-section">
-                            <h4><b>【成果二：Poster】PS-CBM——兼顾精度与解释性的部分共享概念瓶颈模型</b></h4>
-                            
-                            <!-- 先图 -->
-                            <div class="text-center" style="margin: 20px 0;">
-                                <img src="images/aaai26-zhaodelong-PSCBM-framework.png" alt="PS-CBM 示意图" />
-                                <p class="image-caption">图2：PS-CBM 核心策略：部分共享（Partially Shared）VS 独立/全局共享策略</p>
-                            </div>
+                    <h4><b>实验结果：超越 SOTA，强化实体认知</b></h4>
+                    <p>
+                        在 <b>GoodNews</b> 和 <b>NYTimes800k</b> 等数据集上，MERGE 在 caption 质量指标（CIDEr）上分别提升了 <b>+6.84</b> 和 <b>+1.16</b>。
+                        更重要的是，其在命名实体识别（NER）的 F1 分数上分别取得了 <b>+4.14</b> 和 <b>+2.64</b> 的显著进步。
+                        即便在未见过的 Visual News 数据集上，MERGE 依然表现出极强的泛化能力，证明了检索增强机制在处理复杂现实新闻场景中的优越性。
+                    </p>
 
-                            <!-- 后文 -->
-                            <p><b>研究背景：</b>概念瓶颈模型（CBM）通过人类可理解的概念作为中介进行预测。但以往方法在“各类别独立概念”与“全局共享概念”之间难以权衡，导致概念冗余或解释力不足。</p>
-                            <p><b>核心创新：</b>
-                                <ul>
-                                    <li><b>部分共享策略（Partially Shared Strategy）：</b>创新性地提出自动合并跨类别的相似概念，在减少冗余的同时保留类别的特异性。</li>
-                                    <li><b>CEA 指标：</b>提出“概念有效精度（Concept-Efficient Accuracy）”，首次从理论上量化了准确率与解释成本之间的平衡。</li>
-                                </ul>
-                            </p>
+                    <hr />
 
-                            <!-- 实验结果 -->
-                            <p><b>实验结果：</b></p>
-                            <div class="text-center" style="margin: 15px 0;">
-                                <img src="images/aaai26-zhaodelong-PSCBM-results.png" style="max-width:90%" alt="PS-CBM 实验结果" />
-                            </div>
-                            <p>PS-CBM 在 <b>11个</b> 真实世界数据集（包括 Aircraft, ImageNet 等）上进行了验证。结果显示，PS-CBM 在显著减少概念数量的情况下，分类准确率相比传统 CBM 提升了 <b>1.0%~7.4%</b>，实现了“更简洁的概念，更精准的预测”。</p>
-                        </div>
+                    <!-- 成果二：PS-CBM (Poster) -->
+                    <img src="images/aaai26-zhaodelong-PSCBM-framework.png" alt="PS-CBM 框架图" />
 
-                        <hr />
+                    <h4><b>研究亮点：PS-CBM——兼顾精度与解释性的部分共享概念模型</b></h4>
+                    <p>
+                        概念瓶颈模型（CBM）通过引入可理解的概念层来增强模型透明度，但面临概念冗余和精度下降的权衡。
+                        本研究提出了 <b>PS-CBM (Partially Shared Concept Bottleneck Models)</b>。
+                        该方法打破了传统“完全共享”或“完全独立”的概念模式，通过创新的<b>部分共享策略</b>，自动合并各类别间语义相似的概念。
+                        此外，本研究提出了<b>概念有效准确率（CEA）</b>这一新指标，为量化解释成本与预测精度之间的平衡提供了理论支撑。
+                    </p>
 
-                        <h4><b>多维创新：科研与工程深度融合</b></h4>
-                        <p>
-                            上述研究由<b>哈尔滨工业大学（深圳）</b>牵头，联合<b>人民日报社</b>、<b>鹏城实验室</b>、<b>百度公司</b>及<b>新加坡国立大学</b>等多家单位合作完成。这是实验室在多模态理解与 AI 决策可解释性领域的又一重要里程碑，展示了团队在应对复杂真实场景（如新闻报道、高信任决策）时的创新解决能力。
-                        </p>
+                    <img src="images/aaai26-zhaodelong-PSCBM-results.png" alt="PS-CBM 实验结果" />
 
-                        <h4><b>未来展望：让 AI 既强大又透明</b></h4>
-                        <p>
-                            未来，<b>M<sup>3</sup>AIL 实验室</b>将继续探索多模态大语言模型（MLLM）在下游垂直领域的深度应用，致力于开发更具可解释性、更加高效且具备丰富知识背景的智能系统，推动 AI 技术在社会治理与媒体融合中的普惠化发展。
-                        </p>
-                    </div>
+                    <h4><b>实验结果：更简洁的概念，更精准的分类</b></h4>
+                    <p>
+                        在 11 个真实世界数据集上的实验表明，PS-CBM 始终优于现有的 SOTA CBM 模型。
+                        在显著减少所需概念数量（平均仅需约 500 个概念）的前提下，其分类准确率提升了 <b>1.0%~7.4%</b>。
+                        这表明部分共享策略能有效剔除无关干扰，在保持模型紧凑性的同时，提升了分类的鲁棒性，为构建“透明且强大”的 AI 决策系统开辟了新路径。
+                    </p>
+
+                    <hr />
+
+                    <h4><b>跨校企合作：科研与工程深度融合</b></h4>
+                    <p>
+                        本研究由<b>哈尔滨工业大学（深圳）</b>牵头，联合<b>人民日报社</b>、<b>鹏城实验室</b>、<b>新加坡国立大学</b>等单位合作完成。
+                        这些成果充分体现了实验室在应对复杂现实挑战（如深度背景理解、可信任 AI 决策）时的持续创新能力，是产学研深度融合的又一结晶。
+                    </p>
+
+                    <h4><b>未来展望：让大模型更深度、更透明、更普惠</b></h4>
+                    <p>
+                        未来，实验室将进一步探索多模态 RAG 技术与可解释架构在智慧媒体、医疗诊断等高信任需求场景的落地。
+                        我们将继续致力于开发更具认知深度且易于人类理解的智能系统，推动人工智能技术向着更专业、更安全、更公平的方向发展。
+                    </p>
+                </div>
+
+                <!-- 底部预留 -->
+                <div class="col-sm-3 left right text-center">
+                    <p></p>
                 </div>
             </div>
         </div>
     </section>
-
 
     <footer id="footer">
         <div class="fotter">
