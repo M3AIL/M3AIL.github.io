@@ -156,4 +156,23 @@
   max-width: 100%;
   height: auto;
   display: block; /* 块级显示以支持margin auto */
-} 
+}
+
+.news-detail-content .news-figure {
+  margin: 24px auto;
+  text-indent: 0;
+}
+
+.news-detail-content .news-figure img {
+  margin: 0 auto;
+}
+
+.news-detail-content .news-caption {
+  margin: 8px auto 4px;
+  color: #666;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center;
+  text-indent: 0;
+}
