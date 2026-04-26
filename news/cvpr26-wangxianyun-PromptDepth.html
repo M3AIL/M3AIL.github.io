@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>多媒体智能前沿实验室</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo_head_0.png" />
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/patros.css">
+    <link rel="stylesheet" href="../css/news.css">
+
+</head>
+
+<body data-spy="scroll">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" class="logo-img"
+                        alt="company logo" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right custom-menu">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../people.html">团队介绍</a></li>
+                    <li><a href="../research.html">研究课题</a></li>
+                    <li><a href="../publications.html">科研成果</a></li>
+                    <li class="active"><a href="../news.html">团队新闻</a></li>
+                    <li><a href="../joinus.html">加入我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Content -->
+    <section id="bloghome">
+        <div class="container blog">
+            <div class="col-sm-2 text-left">
+                <p></p>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <h2 class="news-detail-title">博士生王显赟的论文获 CVPR 2026 录用</h2>
+                <hr>
+                <div class="news-detail-content">
+                    <img src="images/promptdepth-summary.png" alt="论文展示" />
+
+                    <p>
+                        <b>📢 TL;DR：</b> 我们提出了一种高效可提示交互视觉基础模型框架PromptDepth，旨在解决具身三维感知的低算力需求和几何-语义的单一任务受限等问题。该框架通过级联two-way transformer构建轻量化交互单元，设计出了灵活的多模态交互方法与，只通过单一解码器实现计算机视觉在几何感知与语义识别的统一。在ViT-Base架构模型达到甚至超越Large模型的水平，同时保证了视觉模型在空间感知语义理上的推理精准性和高效性。在单目深度、立体深度、目标追踪、提示分割等多任务评估测试集上达到SOTA效果。
+                    </p>
+
+                    <hr />
+
+                    <img src="images/promptdepth-firstpage.png" alt="论文展示" />
+                    <p>
+                        2026年2月，计算机视觉顶会 CVPR 2026（IEEE/CVF Conference on Computer Vision and Pattern Recognition）录用论文名单正式公布。由哈尔滨工业大学（深圳）智能科学与工程学院多媒体智能前沿实验室（M3AIL Research Group）博士生王显赟（第一作者）在俞俊教授、苗嘉旭教授指导下完成的论文《PromptDepth: Efficient and Promptable Geometric 3D Vision Model for Embodied Intelligence》成功入选本届 CVPR 主会（Main Track）。该研究在计算机视觉与具身感知领域取得了重要突破。
+                    </p>
+
+                    <h4><b>研究亮点1：高效感知的提示交互模块与新型网络架构</b></h4>
+                    <img src="images/promptdepth-architecture.png" alt="方法框架展示" />
+                    <p>
+                        本文提出了一种名为 PromptDepth 的前馈神经网络，专为具身系统实现高效的 3D 理解与交互而设计。该模型摒弃了冗余的多头解码器架构，采用统一的密集预测解码器，并创新性地设计了可提示的密集预测 Transformer（promptDPT）。其核心由一个级联双向 Transformer 构成：其中“密集块”负责潜在的几何对齐，“稀疏块”则负责处理各类视觉交互（如点或掩码提示）。这种新颖的架构允许模型在不增加额外计算开销的情况下，根据特定提示自适应地输出全景深度、实例深度或追踪深度图，完美契合了具身智能对实时推理和极简预测的需求。
+                    </p>
+
+                    <h4><b>研究亮点2：几何与语义全新的统一训练策略</b></h4>
+                    <p>
+                        在联合训练全景深度与实例深度时，模型面临着严重的标签分布不平衡与潜在的特征空间冲突。为了解决实例深度图中大量背景零分布带来的偏差，本文提出了一种新颖的实例标签分布平滑（ILDS）损失，通过计算深度频率为每张图生成自适应的平衡权重。此外，针对高级实例语义可能扭曲细粒度几何对应关系的问题，研究进一步引入了 Gram Anchoring 正则化。这种统一训练策略在保留几何图块相似性的同时，构建了鲁棒的实例特征表示，有效防止了模型在训练中途崩溃，从而实现了多任务性能的互相促进。
+                    </p>
+
+                    <img src="images/promptdepth-training.png" alt="统一训练策略展示" />
+
+                    <h4><b>研究亮点3：逼真、对齐、大规模的离线渲染数据工程技术</b></h4>
+                    <p>
+                        鉴于现有数据集缺乏几何与实例感知完美对齐的样本，本文构建了一个高度灵活的大规模合成数据引擎。该数据管道利用虚幻引擎的影片渲染队列（MRQ），不仅能够离线渲染出高达 4K 分辨率的高保真逼真图像，还能同步生成像素级完美对齐的真实标签通道（如实例掩码、深度图、光流及相机位姿等）。借助该渲染工程技术，作者在 100 个不同的动态合成环境中，成功收集了包含超过 1000 万个独特物体实例的大规模数据集，为 3D 实例级视觉感知模型提供了极其宝贵的数据支撑。
+                    </p>
+
+                    <img src="images/promptdepth-data-engine.png" alt="数据工程展示" />
+
+                    <h4><b>实验结果：多项公开基准上的 SOTA 性能与高效推理</b></h4>
+                    <p>
+                        在多个深度估计基准数据集（如 KITTI、Sintel、NYU 等）上的系统评测表明，PromptDepth 展现了卓越的零样本泛化能力。相比于现有依赖庞大参数量（如 ViT-L 或 ViT-G）的视觉大模型，本方法仅依靠轻量级的网络架构便在单目与立体深度估计上实现了 SOTA 性能。实验结果进一步证明，该统一的密集预测架构能够有效消除冗余计算，在真实具身任务中，相比传统的“多专家组合”模型推理速度提升了两倍以上，成功实现了约 26 FPS 的实时高频感知。
+                    </p>
+
+                    <img src="images/promptdepth-results.png" alt="实验结果展示" />
+
+                    <h4><b>团队优势：深耕具身智能与三维几何视觉</b></h4>
+                    <p>
+                        本研究由哈尔滨工业大学（深圳） M3L 实验室主导完成，充分展示了团队在<b>具身智能（Embodied AI）</b>、<b>三维几何视觉理解</b> 以及<b>高速端到端自主无人系统控制</b>等前沿方向的持续科研攻坚能力与深厚的技术积累。
+                    </p>
+
+                    <img src="images/promptdepth-team.png" alt="团队研究方向展示" />
+
+                    <h4><b>未来展望：赋能高机动与高对抗的低空飞行智能体</b></h4>
+                    <p>
+                        PromptDepth 为计算资源受限的具身平台（如无人机系统）提供了极其高效、灵活的实时 3D 场景理解与实例级交互方案。未来，团队将进一步依托“AeroSeek”等软硬件结合的系统工程，探索该轻量级视觉基础模型在<b>高速动态避障</b>、<b>端到端目标追踪与拦截</b>等高动态飞行场景中的闭环应用，推动更具自主性、实时性与鲁棒性的低空具身智能体落地。
+                    </p>
+
+                    <img src="images/promptdepth-future.png" alt="未来应用展望展示" />
+                </div>
+
+                <div class="col-sm-3 left right text-center">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="fotter">
+            <div class="container">
+                <div class="col-sm-2 right text-left">
+                </div>
+                <div class="col-sm-5 left text-left">
+                    <p>
+                        <i class="fa fa-1x fa-map-marker"></i> 实验室地址：<br />
+                        深圳市南山区桃源街道深圳大学城哈尔滨工业大学校区，邮编518055<br />
+                        哈尔滨工业大学深圳校区信息楼 L栋 228室<br /><br />
+                        <i class="fa fa-1x fa-home"></i> 实验室网址：<br />
+                        <a href="../index.html">https://m3ail.github.io</a><br />
+                    </p>
+                </div>
+                <div class="col-sm-5 middle text-left">
+                    <p>
+                        <i class="fa fa-1x fa-user"></i> 负责人：<br />
+                        俞俊（教授）：yujun<i class="fa fa-1x fa-at"></i>hit.edu.cn
+                        <br /><br />
+                        <i class="fa fa-1x fa-university"></i> 友情链接：<br />
+                        <a href="https://www.hitsz.edu.cn/index.html" target="_blank">
+                            Harbin Institute of Technology, Shenzhen</a><br />
+                        <!-- 等待学院更新 -->
+                        <a href="https://www.hitsz.edu.cn/index.html" target="_blank">
+                            School of Intelligent Science and Engineering
+                        </a>
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row myfooter">
+                <div class="text-center">
+                    Copyright &copy; 2025. All rights reserved. Designed by
+                    <a target="_blank" href="../index.html">M<sup>3</sup>AIL</a>.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Portfolio -->
+    <script src="../js/jquery.quicksand.js"></script>
+
+</body>
+
+</html>
