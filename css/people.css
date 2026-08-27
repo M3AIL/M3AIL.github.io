@@ -71,3 +71,7 @@
   margin-right: 0px;
   text-align: left;
 }
+
+#meet-team .team-member p.teacher-bio-long {
+  height: auto;
+}
