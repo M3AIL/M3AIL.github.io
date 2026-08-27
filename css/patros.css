@@ -1795,7 +1795,7 @@ figure.effect-oscar:hover img {
   line-height: 1.5em;
   margin-top: 0.25em;
   margin-bottom: 1em;
-  height: 5em;
+  min-height: 5em;
 }
 #meet-team .teamspace {
   margin-top: 10px;
