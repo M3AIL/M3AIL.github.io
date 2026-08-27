@@ -1,56 +1,40 @@
+<p align="center">
+  <a href="https://m3ail.github.io/">
+    <img src="images/logo.png" width="360" alt="M3AIL Research Group" />
+  </a>
+</p>
 
-# M3AIL Research Group Website Manual (v1.0)
+<h1 align="center">M<sup>3</sup>AIL Research Group</h1>
 
-哈尔滨工业大学（深圳）  
-智能科学与工程学院  
-多媒体智能前沿实验室（M3AIL Research Group）网站手册
+<p align="center">
+  哈尔滨工业大学（深圳）智能科学与工程学院<br />
+  多媒体智能前沿实验室
+</p>
 
----
+<p align="center">
+  <a href="https://m3ail.github.io/"><strong>访问实验室网站</strong></a>
+</p>
 
-## GitHub Pages部署说明
+## 关于我们
 
-### 1. 仓库名要求
-仓库名必须为：`用户名.github.io`，这是GitHub Pages的默认访问链接规则。
+多媒体智能前沿实验室（M<sup>3</sup>AIL Research Group）隶属于哈尔滨工业大学（深圳）智能科学与工程学院，由学院院长、国家杰出青年科学基金获得者俞俊教授领衔，于 2024 年成立。
 
-### 2. 必备文件
-网站根目录下必须包含`index.html`文件。
+实验室聚焦多模态智能、具身智能、世界模型、大模型、智能体、可控视频生成与编辑、医学影像分析及跨域感知等研究方向，致力于推动人工智能在多媒体计算、智能感知及实际应用中的创新发展。
 
-### 3. Pages设置
-- 打开仓库的`Settings` -> `Pages`
-- 选择部署分支为`main`，路径选择`/`（root）
-- 点击`Save`保存设置
+## 网站导航
 
-> **提示**  
-> 上传网站文件后，GitHub Pages可能存在几分钟缓存延迟。如未及时更新，可以尝试重新登录或清除浏览器缓存。
+- [首页](https://m3ail.github.io/)
+- [团队介绍](https://m3ail.github.io/people.html)
+- [研究课题](https://m3ail.github.io/research.html)
+- [科研成果](https://m3ail.github.io/publications.html)
+- [团队新闻](https://m3ail.github.io/news.html)
+- [加入我们](https://m3ail.github.io/joinus.html)
 
----
+## 仓库说明
 
-## Git操作手册
+本仓库用于维护 M<sup>3</sup>AIL Research Group 官方网站。网站采用静态 HTML、CSS 和 JavaScript 构建，并通过 GitHub Pages 从 `main` 分支根目录自动发布。推送更新后，线上内容通常会在几分钟内生效。
 
-### 第一次上传（初始化并推送）
-- git init  
-- git add .  
-- git commit -m "初始化网站"  
-- git branch -M main  
-- git remote add origin https://github.com/M3AIL/M3AIL.github.io.git  
-- git push -u origin main  
+## 联系方式
 
----
-
-### 清空本地和远程仓库
-- git rm -r .  
-- git commit -m "删除所有文件"  
-- git push  
-
----
-
-### 本地文件全部上传到远程仓库
-git pull origin main  # 每次开始前先拉取，避免冲突堆积
-git add .
-git commit -m "描述本次改动"
-git push origin main
-
----
-
-## 实验室网址
-https://m3ail.github.io
+- 邮箱：[yujun@hit.edu.cn](mailto:yujun@hit.edu.cn)
+- 地址：哈尔滨工业大学（深圳）信息楼 L 栋 228 室
